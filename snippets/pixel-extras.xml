@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <remote name="gitlab"
+                    fetch="https://gitlab.com/"
+                    clone-depth="1" />
+
   <!-- External repos -->
-  <project path="external/faceunlock" name="external_faceunlock" remote="pixel-gitlab-self-hosted" />
+  <project path="external/faceunlock" name="DotOS-Official/external_faceunlock" remote="gitlab" revision="twelve" />
   <project path="external/bson" name="external_bson" remote="pixel" />
   <project path="external/connectivity" name="external_connectivity" remote="pixel" />
   <project path="external/exfatprogs" name="external_exfatprogs" remote="pixel" />
